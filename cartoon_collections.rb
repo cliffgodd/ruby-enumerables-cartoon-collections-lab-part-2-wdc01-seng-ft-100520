@@ -9,7 +9,7 @@ def square_array(array)
 end
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.map do |element|
+  planeteer_calls.map {|element|element.capitalize! += "!"}
     element.capitalize!
     element += "!"
 
